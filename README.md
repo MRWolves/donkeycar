@@ -31,6 +31,7 @@ After building a Donkey2 you can turn on your car and go to http://localhost:888
 ### Modify your cars behavior.
 The donkey car is controlled by running a sequence of events
 
+
 ```python
 #Define a vehicle to take and record pictures 10 times per second.
 
@@ -61,6 +62,12 @@ V.add(tub, inputs=['image'], outputs=['num_records'])
 #start the drive loop at 10 Hz
 V.start(rate_hz=10)
 ```
+
+### Training your model with an AMD GPU using PlaidML
+* Intended for users with an AMD graphics card.
+* If using NVidia, look into TensorFlow. PlaidML is the AMD version of TensorFlow
+* Differences are
+** keras.py inside /donkeycar/parts
 
 See [home page](http://donkeycar.com), [docs](http://docs.donkeycar.com)
 or join the [Slack channel](http://www.donkeycar.com/community.html) to learn more.
