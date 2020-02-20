@@ -16,6 +16,18 @@ Options:
 import os
 import time
 
+# Is it the same python interpreter? 
+import sys
+print(sys.executable)
+
+# Is it the same working directory? 
+print(os.getcwd())
+
+# Are there any discrepancies in sys.path? 
+# this is the list python searches, sequentially, for import locations
+# some environment variables can fcuk with this list
+print(sys.path)
+
 from docopt import docopt
 import numpy as np
 
